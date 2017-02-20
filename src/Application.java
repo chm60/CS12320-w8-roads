@@ -48,7 +48,7 @@ public class Application {
         B4353.setDestinationSettlement(borth);
 
         System.out.println(aberystwyth.toString());
-        System.out.println(A44.toString()); 
+        System.out.println(A44.toString());
 
 
 
