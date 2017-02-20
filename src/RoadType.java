@@ -1,8 +1,7 @@
 /**
- * The king of roads : M ( Motorway )
- * A Road, B Road, Unclassified Road
- * @author Chris
- * @Version 1
+ * @author Chris Machala
+ * @email Chm60@aber.ac.uk
+ * @version 1.1
  */
 public enum RoadType {
 

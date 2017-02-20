@@ -2,9 +2,11 @@ import javax.xml.transform.Source;
 import java.util.Set;
 
 /**
- * @author Chris
- * @Version 1
+ * @author Chris Machala
+ * @email Chm60@aber.ac.uk
+ * @version 1.1
  */
+
 public class Road {
 
     private String name;
