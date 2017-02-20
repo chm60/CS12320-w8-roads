@@ -7,7 +7,7 @@ public class Settlement {
 
     private String name;
     private int population;
-    private SettlementType kind; 
+    private SettlementType kind;
     private Road[] roads;
     private int numRoads;
 
