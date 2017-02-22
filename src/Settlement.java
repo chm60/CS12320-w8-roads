@@ -69,7 +69,7 @@ public class Settlement {
     }
 
     public String toString() {
-        return "The " + kind + " of " + name + " has a population of " + population;
+        return "The " + kind + " of " + name + " has a population of " + population + ", with " + numRoads + " roads leading to other settlements.";
 
     }
 

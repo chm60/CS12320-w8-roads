@@ -32,7 +32,16 @@ public class Application {
         Road B4353 = new Road("B4353", RoadType.B,bowStreet,borth);
 
         System.out.println(aberystwyth.toString());
+        System.out.println(bowStreet.toString());
+        System.out.println(borth.toString());
+        System.out.println(llanbadarn.toString());
+        System.out.println(penparcau.toString());
+
         System.out.println(A44.toString());
+        System.out.println(A4871.toString());
+        System.out.println(A4872.toString());
+        System.out.println(HoelYBont.toString());
+        System.out.println(B4353.toString());
 
     }
 
