@@ -18,27 +18,27 @@ public class Road {
     /**
      * Constructor for objects of class Road
      *
-     * @param startName   becomes initial Road Name
-     * @param startRoadType   becomes initial Road type
-     * @param startSourceSettlement   becomes initial source settlement
-     * @param startDestinationSettlement   becomes initial destination settlement
+     * @param nm   becomes initial Road Name
+     * @param classifier   becomes initial Road type
+     * @param source   becomes initial source settlement
+     * @param destination   becomes initial destination settlement
      *
      */
-    public Road(String startName, RoadType startRoadType, Settlement startSourceSettlement, Settlement startDestinationSettlement ) {
+    public Road(String nm, RoadType classifier, Settlement source, Settlement destination ) {
 
-        name = startName;
-        roadType = startRoadType;
-        sourceSettlement = startSourceSettlement;
-        destinationSettlement = startDestinationSettlement;
-        sourceSettlement.add(this);
-        destinationSettlement.add(this);
+        name = nm;
+        roadType = classifier;
+
+        sourceSettlement = source;
+        destinationSettlement = destination;
+
+        source.add(this);
+        destination.add(this);
 
     }
 
 
-    public String toString() {
-        return "Road [name=" + name + " roadType=" + roadType + " sourceSettlement=" + sourceSettlement.getName() + " destinationSettlement=" + destinationSettlement.getName() + "}";
-    }
+
 
     // GET and SET methods below for all instance variables
 
@@ -50,25 +50,20 @@ public class Road {
         return roadType;
     }
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setRoadType(RoadType roadType) {
-        this.roadType = roadType;
-    }
-
     public Settlement getSourceSettlement() {
         return sourceSettlement;
     }
 
-    public void setSourceSettlement(Settlement sourceSettlement) {
-        this.sourceSettlement = sourceSettlement;
-    }
-
     public Settlement getDestinationSettlement() {
         return destinationSettlement;
+    }
+
+    public String toString() {
+        return "Road [nm=" + name + " classifier=" + roadType + " source =" + sourceSettlement.getName() + " destination =" + destinationSettlement.getName() + "}";
+    }
+
+    public void setSourceSettlement(Settlement sourceSettlement) {
+        this.sourceSettlement = sourceSettlement;
     }
 
     public void setDestinationSettlement(Settlement destinationSettlement) {

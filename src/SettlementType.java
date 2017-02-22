@@ -6,6 +6,6 @@
 
 public enum SettlementType {
 
-    H, V, T, C
+    HAMLET, VILLAGE, TOWN, CITY
 
 }

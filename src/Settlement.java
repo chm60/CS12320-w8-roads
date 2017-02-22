@@ -15,14 +15,6 @@ public class Settlement {
     // MAX_ROADS represents the maximum number of roads that can be connected to a Settlement object.
     public static final int MAX_ROADS = 100;
 
-    public Settlement(){
-
-        name = "Unkown";
-        population = 0;
-        kind = SettlementType.H;
-
-    }
-
     /**
      * Constructor for objects of class Settlement
      *
@@ -37,6 +29,27 @@ public class Settlement {
         kind = k;
         roads = new Road[MAX_ROADS];
 
+    }
+
+    // GET and SET methods below for all instance variables
+    public String getName() {
+        return name;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public SettlementType getKind() {
+        return kind;
+    }
+
+    public void setKind(SettlementType kind) {
+        this.kind = kind;
     }
 
     public void add(Road road){
@@ -56,47 +69,11 @@ public class Settlement {
     }
 
     public String toString() {
-        return "The " + kind + " of " + name + " has a population of " + population + roads[1] ;
+        return "The " + kind + " of " + name + " has a population of " + population;
 
     }
 
 
-    // GET and SET methods below for all instance variables
-
-    public void setPopulation(int population) {
-        this.population = population;
-    }
-
-    public void setKind(SettlementType kind) {
-        this.kind = kind;
-    }
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPopulation() {
-        return population;
-    }
-
-    public SettlementType getKind() {
-        return kind;
-    }
-
-    public int getNumRoads() {
-        return numRoads;
-    }
-
-    public void setNumRoads(int numRoads) {
-        this.numRoads = numRoads;
-    }
-
-    public static int getMaxRoads() {
-        return MAX_ROADS;
-    }
 
 
 }
